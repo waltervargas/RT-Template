@@ -1,0 +1,23 @@
+Subject: Respuesta automática al caso: {$Ticket->Subject}
+
+
+Saludos cordiales,
+
+Este mensaje ha sido generado automáticamente en respuesta a su solicitud: 
+
+"{$Ticket->Subject()}", 
+
+Fue asignado un caso a su solicitud con el identificador: { $Ticket->SubjectTag }.
+
+Por favor incluya la cadena de texto: 
+
+{ $Ticket->SubjectTag }
+
+en el asunto de la correspondencia que quiera enviar en relación a este caso. 
+
+Muchas Gracias, 
+{$Ticket->QueueObj->CorrespondAddress()}
+
+Información del caso: 
+-------------------------------------------------------------------------
+{$Transaction->Content()}
